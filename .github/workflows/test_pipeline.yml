@@ -1,5 +1,5 @@
 
-name: .NET Core Desktop
+name: .NET Core 
 
 on:
   push:
