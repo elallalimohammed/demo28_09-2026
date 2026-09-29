@@ -39,7 +39,7 @@ namespace UsersTestProject
             Assert.AreEqual(expectedUser.Name, user.Name);
             Assert.AreEqual(expectedUser.Username, user.Username);
             Assert.AreEqual(expectedUser.Email, user.Email);
-            _mockRepository.Verify(r => r.GetByIdAsync(1), Times.Once);
+            _mockRepository.Verify(r => r.GetByIdAsync(1), Times.twice);
         }
     }
 }
