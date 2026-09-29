@@ -34,7 +34,7 @@ namespace UsersTestProject
 
             // Assert
             var user = result.Value;
-            Assert.IsNull(user);
+            Assert.IsNotNull(user);
             Assert.AreEqual(expectedUser.Id, user!.Id);
             Assert.AreEqual(expectedUser.Name, user.Name);
             Assert.AreEqual(expectedUser.Username, user.Username);
